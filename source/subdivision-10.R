@@ -213,6 +213,6 @@ subdivision <- function(seed) {
 library(queue)
 queue <- Queue$new()
 for(seed in 1900:1999) {
-  queue$push(subdivision, list(seed = seed))
+  queue$add(subdivision, list(seed = seed))
 }
 queue$run()
